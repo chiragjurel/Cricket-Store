@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Checkout</title>
+    <link rel="stylesheet" href="index.css">
+  </head>
+
+  <body>
+     <!-- this is a comment tag-->
+    
+     <nav>
+      <a href="index.html"><img src="./images/batball-high-resolution-logo.png" id="logo"></a>
+      <div class="header-right"><a href="everything.html"> Everything</a>
+         <a href="index.html"> Home</a>
+         <a href="about.html"> About</a>
+         <a href="contact.html"> Contact</a>
+         <div id="cart-icon"><img src="./images/icons8-cart-50.png" class="header-right-logo" onclick="showcart()"> <span id="icon-cart-value">0</span></div>
+         <a href="account.html"><img src="./images/icons8-account-50.png" class="header-right-logo"></a>
+        </div>
+   </nav>
+
+
+
+   
+   <div class="cart">
+      
+    <h1> Shopping Cart </h1>
+
+    <div class="cart-items">
+         <div class="item">
+             <div>      </div>
+             <div id="move-left">Product</div>
+             <div>Quantity</div>
+             <div>Price</div>
+             <div>Subtotal</div>
+         </div>
+    </div>
+  
+  <div class="cart-buttons">
+     <div class="two-buttons"> <button class="close-cart"> Close </button>
+          <button class="checkout-cart" onclick="goto_checkout()"> Checkout </button>
+     </div>
+     <div class="total">
+        Total:0<span></span>
+     </div>
+ </div>
+</div>
+
+
+
+
+   <div class="checkout-below-header">
+     <h1> Checkout </h1>
+     <hr>
+
+     <p> Have a coupon? If yes, please apply it below</p>
+     <form action="index.html">
+       <input type="text"  name="coupon" placeholder="enter coupon..."><input type="submit" id="coupon" value="Apply Coupon"> 
+     </form>
+     <br> <br>
+     <form action="after_place_order.html">
+       <div class="leftandright">
+          <div id="leftpart"> <h1> Billing Details</h1> 
+              <label for="fname"> First Name:</label>
+              <input type="text" name="fname" required>
+              <label for="lname"> Last Name:</label>
+              <input type="text" name="lname" required>
+              <br><br>
+              <label for="country" style="margin-left: 20px;"> Country:</label>
+              <input type="text" name="country" required>
+              <label for="street" style="margin-left: 33px;"> Street:</label>
+              <input type="text" name="street" required>
+              <br> <br>
+              <label for="town" style="margin-left: 38px;">Town:</label>
+              <input type="text" name="Town" required>
+              <label for="state" style="margin-left: 40px;"> State:</label>
+              <input type="text" name="state" required>
+              <br><br>
+              <label for="pincode" style="margin-left: 18px;"> Pincode:</label>
+              <input type="text" name="pincode" required>
+              <label for="phone" style="margin-left: 31px;"> Phone:</label>
+              <input type="text" name="phone" required>
+              <br> <br>
+              <label for="email" style="margin-left: 30px;"> E-mail:</label>
+              <input type="text" name="email" required>        
+            </div>
+       </form>
+
+           <div id="rightpart">
+             <h1> Your Order </h1>
+          
+             <table id="rptable">
+                 <tr>
+                   <th> Product</th>
+                
+                   <th> Subtotal </th>
+                 </tr>
+          
+            </table>
+
+        <br><br>
+
+          <input type="radio" name="paymentmode" required> <label for="paymentmode"> Cheque</label>
+          <input type="radio" name="paymentmode" required> <label for="paymentmode"> Cash on Delivery</label>
+          <br><br>
+          <input type="submit" value="Place Order" id="placeorder">
+        </div>
+        
+      </div>
+    </form>   
+  </div>
+
+
+  
+  <div class="footer">
+    <div class="fgrid">
+          <div id="flogo"> <img src="./images/batball-high-resolution-logo.png"> Maecenas mi justo, interdum at consectetur vel, tristique et arcu. Ut quis eros blandit, ultrices diam in, elementum ex. Suspendisse quis faucibus urna. Suspendisse pellentesque. </div>
+          <div> <h1>Quick Links</h1> <a href="./about.html">About</a> <a href="checkout.html"> Checkout </a> <a href="contact.html"> Contact </a> <a href="./index.html"> Home </a> <a href="./account.html"> My Account </a> <a href="./everything.html"> Shop </a></div>
+          <div> <h1> Download our mobile app </h1> <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec aliquam gravida sollicitudin. Praesent porta enim mi, non tincidunt libero interdum sit amet.</p></div>
+          <div> <h1> Site Links </h1> <a href="index.html"> Privacy Policy </a> <a href="index.html">Shipping Details</a> <a href="index.html"> Offers and Coupons </a> <a href="index.html">Terms and Coupons </a></div>
+          <div> <h1> Quick Links </h1> <a href="about.html"> Know more about us </a> <a href="everything.html"> Visit Store </a> <a href="contact.html"> Let's connect </a> <a href="index.html"> Locate stores</a> <a></a> <div id="play"><img src="./images/play-store.png"> <img src="./images/app-store.png"></div></div>
+    </div>
+</div>
+
+    
+  <script type="text/javascript" src="checkout.js"></script>
+  </body>
+</html>

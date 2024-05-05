@@ -1,0 +1,118 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Everything</title>
+    <link rel="stylesheet" href="index.css">
+  </head>
+
+  <body>
+     <!-- this is a comment tag-->
+     <nav>
+      <a href="index.html"><img src="./images/batball-high-resolution-logo.png" id="logo"></a>
+      <div class="header-right"><a href="everything.html"> Everything</a>
+         <a href="index.html"> Home</a>
+         <a href="about.html"> About</a>
+         <a href="contact.html"> Contact</a>
+         <div id="cart-icon"><img src="./images/icons8-cart-50.png" class="header-right-logo" onclick="showcart()"> <span id="icon-cart-value">0</span></div>
+         <a href="account.html"><img src="./images/icons8-account-50.png" class="header-right-logo"></a>
+        </div>
+   </nav>
+
+
+
+   <div class="cart">
+      
+    <h1> Shopping Cart </h1>
+
+    <div class="cart-items">
+         <div class="item">
+             <div>      </div>
+             <div id="move-left">Product</div>
+             <div>Quantity</div>
+             <div>Price</div>
+             <div>Subtotal</div>
+         </div>
+    </div>
+  
+  <div class="cart-buttons">
+     <div class="two-buttons"> <button class="close-cart"> Close </button>
+          <button class="checkout-cart" onclick="goto_checkout()"> Checkout </button>
+     </div>
+     <div class="total">
+        Total:<span></span>
+     </div>
+ </div>
+</div>
+
+
+
+
+
+     <div id="everythingMiddle">
+        <div class="filterPart">
+              
+                <label for="gsearch">Search Products:</label>
+                <input type="search" id="psearch" name="psearch">
+                <input type="submit" value="Search" id="searchSubmit">
+              
+
+              <h1> Filter By Price</h1>
+              <form action="index.html">
+                <input type="range" name="priceFilter" id="priceFilter" max="50" min="10">
+                <input type="text" id="price-filter-input" value="">
+              </form>
+
+              <div class="filterflexbox">
+                <div id="ffb0"> <a href="bat.html"><img src="./images/batnew.jpg"><p> English Willow Bat <br> $30 </p></a> </div>
+                <div id="ffb1"> <a href="ball.html"><img src="./images/ballnew.jpg" height="250px"> <p> Leather Ball  <br> $10 </p></a></div>
+                <div id="ffb2"> <a href="stumps.html"><img src="./images/stumpsnew.jpg"> <p> Wooden Stumps <br> $20 </p></a></div>
+                <div id="ffb3"> <a href="gloves.html"><img src="./images/gloves.png"> <p> Gloves <br> $15 </p></a></div> 
+                <div id="ffb4"> <a href="shoes.html"><img src="./images/shoes.jpg"> <p> Cricket Shoes <br> $20 </p></a></div> 
+                <div id="ffb5"> <a href="pads.html"><img src="./images/pads.jpg"> <p> Pads <br> $15 </p></a></div> 
+                <div id="ffb6"> <a href="helmet.html"><img src="./images/helmet.jpg"> <p> Helmet <br> $25 </p></a></div> 
+              </div>
+
+        </div>
+        <div class="sortPart">
+            <h1>Shop</h1>
+
+                <select name="sortType" id="sortType" style="height: 50px; width: 200px; background-color: #cbf1f5; font-size:medium; border: black solid 2px;">
+                    <!-- <option value="pop"> sort by popularity</option> -->
+                    <!-- <option value="rating"> sort by average rating</option> -->
+                    <!-- <option value="latest"> sort by latest</option> -->
+                    <option value="priceh"> Sort by price (high to low)</option>
+                    <option value="pricel"> Sort by price (low to high)</option>
+                </select>
+                
+            
+            <div class="sortflexbox">
+                <div id="sfb0" class="sort-part-products"> <a href="bat.html"><img src="./images/batnew.jpg"><p> English Willow Bat <br> $30 </p></a> </div>
+                <div id="sfb1" class="sort-part-products"> <a href="ball.html"><img src="./images/ballnew.jpg" height="250px"> <p> Leather Ball <br> $10 </p></a></div>
+                <div id="sfb2" class="sort-part-products"> <a href="stumps.html"><img src="./images/stumpsnew.jpg"> <p> Wooden Stumps <br> $20 </p></a></div>
+                <div id="sfb3" class="sort-part-products"> <a href="gloves.html"><img src="./images/gloves.png"> <p> Gloves <br> $15 </p></a></div> 
+                <div id="sfb4" class="sort-part-products"> <a href="shoes.html"><img src="./images/shoes.jpg"> <p> Cricket Shoes <br> $20 </p></a></div> 
+                <div id="sfb5" class="sort-part-products"> <a href="pads.html"><img src="./images/pads.jpg"> <p> Pads <br> $15 </p></a></div> 
+                <div id="sfb6" class="sort-part-products"> <a href="helmet.html"><img src="./images/helmet.jpg"> <p> Helmet <br> $25 </p></a></div> 
+            </div>
+            
+        </div>
+     </div>
+
+
+     
+     <div class="footer">
+      <div class="fgrid">
+            <div id="flogo"> <img src="./images/batball-high-resolution-logo.png"> Maecenas mi justo, interdum at consectetur vel, tristique et arcu. Ut quis eros blandit, ultrices diam in, elementum ex. Suspendisse quis faucibus urna. Suspendisse pellentesque. </div>
+            <div> <h1>Quick Links</h1> <a href="./about.html">About</a> <a href="checkout.html"> Checkout </a> <a href="contact.html"> Contact </a> <a href="./index.html"> Home </a> <a href="./account.html"> My Account </a> <a href="./everything.html"> Shop </a></div>
+            <div> <h1> Download our mobile app </h1> <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec aliquam gravida sollicitudin. Praesent porta enim mi, non tincidunt libero interdum sit amet.</p></div>
+            <div> <h1> Site Links </h1> <a href="index.html"> Privacy Policy </a> <a href="index.html">Shipping Details</a> <a href="index.html"> Offers and Coupons </a> <a href="index.html">Terms and Coupons </a></div>
+            <div> <h1> Quick Links </h1> <a href="about.html"> Know more about us </a> <a href="everything.html"> Visit Store </a> <a href="contact.html"> Let's connect </a> <a href="index.html"> Locate stores</a> <a></a> <div id="play"><img src="./images/play-store.png"> <img src="./images/app-store.png"></div></div>
+      </div>
+ </div>
+
+
+     <script type="text/javascript" src="everything.js"></script>
+       
+  </body>
+</html>

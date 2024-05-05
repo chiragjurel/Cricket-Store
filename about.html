@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+    <nav>
+        <a href="index.html"><img src="./images/batball-high-resolution-logo.png" id="logo"></a>
+        <div class="header-right"><a href="everything.html"> Everything</a>
+           <a href="index.html"> Home</a>
+           <a href="about.html"> About</a>
+           <a href="contact.html"> Contact</a>
+           <div id="cart-icon"><img src="./images/icons8-cart-50.png" class="header-right-logo" onclick="showcart()"> <span id="icon-cart-value">0</span></div>
+           <a href="account.html"><img src="./images/icons8-account-50.png" class="header-right-logo"></a>
+        </div>
+     </nav>
+
+
+
+     <div class="about-us-heading">
+          <div>
+            <h1> About Us </h1>
+          </div>
+     </div> 
+
+
+     
+
+     <div class="cart">
+      
+          <h1> Shopping Cart </h1>
+      
+          <div class="cart-items">
+               <div class="item">
+                   <div>      </div>
+                   <div id="move-left">Product</div>
+                   <div>Quantity</div>
+                   <div>Price</div>
+                   <div>Subtotal</div>
+               </div>
+          </div>
+        
+        <div class="cart-buttons">
+           <div class="two-buttons"> <button class="close-cart"> Close </button>
+                <button class="checkout-cart" onclick="goto_checkout()"> Checkout </button>
+           </div>
+           <div class="total">
+              Total:<span></span>
+           </div>
+       </div>
+      </div>
+       
+ 
+
+     <div class="about-banner">
+          <img id="about-image1" src="./images/aboutimg1.jpg">
+          
+         <div class="about-banner2"> 
+              <h1> We are your favourite Sports Store </h1>
+              <p> <img id="about-image2" src="./images/aboutimg2.jpeg"></p>
+                <span>Tuas quisquam quo gravida proident harum, aptent ligula anim consequuntur, ultrices mauris, nunc voluptates lobortis, varius, potenti placeat! Fuga omnis. Cubilia congue. Recusandae. Vero penatibus quasi! Nostra tenetur dignissimos ultrices natus distinctio ultrices consequuntur numqu.
+                  
+                  Officiis fuga harum porro et? Similique rhoncus atque! Netus blanditiis provident nunc posuere. Rem sequi, commodo, lorem tellus elit, hic sem tenetur anim amet quas, malesuada proident platea corrupti expedita.
+               </span>
+        </div>
+     </div>
+
+     <div class="boasting">
+           <div> Numbers speak <br>for themselves! </div>
+           <div> 5,000+ <br>Curated Products </div>
+           <div> 800+ <br>Curated Products</div>
+           <div> 40+ <br>Product Categories </div>
+     </div>
+
+
+     <div class="about-last">
+          <div id="left">
+            <img class="myslides" src="./images/batnew.jpg">
+            <img class="myslides" src="./images/ballnew.jpg">
+            <img class="myslides" src="./images/stumpsnew.jpg">
+            <img class="myslides" src="./images/helmet.jpg">
+            <img class="myslides" src="./images/shoes.jpg">
+            <img class="myslides" src="./images/pads.jpg">
+            <img class="myslides" src="./images/gloves.png">
+            <div id="pnbuttons"> <button onclick="img_change(+1)"> Next </button> <button onclick="img_change(-1)"> Prev </button> </div>
+          </div>
+
+          <div id="right">
+              <h1> We Deal With Various High Quality Cricket and other Sports Products! </h1>
+              <ul>
+                 <li>Bats</li>
+                 <li>Balls</li>
+                 <li>Stumps</li>
+                 <li>Bat Grips</li>
+                 <li>Many other sports items</li>
+              </ul>
+              <button id="ssbutton" onclick="location.assign('everything.html')"> Start Shopping </button>
+          </div>
+     </div>
+
+
+     
+     <div class="footer">
+          <div class="fgrid">
+                <div id="flogo"> <img src="./images/batball-high-resolution-logo.png"> Maecenas mi justo, interdum at consectetur vel, tristique et arcu. Ut quis eros blandit, ultrices diam in, elementum ex. Suspendisse quis faucibus urna. Suspendisse pellentesque. </div>
+                <div> <h1>Quick Links</h1> <a href="./about.html">About</a> <a href="checkout.html"> Checkout </a> <a href="contact.html"> Contact </a> <a href="./index.html"> Home </a> <a href="./account.html"> My Account </a> <a href="./everything.html"> Shop </a></div>
+                <div> <h1> Download our mobile app </h1> <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec aliquam gravida sollicitudin. Praesent porta enim mi, non tincidunt libero interdum sit amet.</p></div>
+                <div> <h1> Site Links </h1> <a href="index.html"> Privacy Policy </a> <a href="index.html">Shipping Details</a> <a href="index.html"> Offers and Coupons </a> <a href="index.html">Terms and Coupons </a></div>
+                <div> <h1> Quick Links </h1> <a href="about.html"> Know more about us </a> <a href="everything.html"> Visit Store </a> <a href="contact.html"> Let's connect </a> <a href="index.html"> Locate stores</a> <a></a> <div id="play"><img src="./images/play-store.png"> <img src="./images/app-store.png"></div></div>
+          </div>
+     </div>
+
+    
+     <script type="text/javascript" src="./about.js"></script>
+</body>
+</html>
